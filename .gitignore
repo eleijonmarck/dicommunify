@@ -43,10 +43,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
-<<<<<<< HEAD
-=======
 .hypothesis/
->>>>>>> ed1b8fdf9890c49e67cfc48cd4139a0350804f2e
 
 # Translations
 *.mo
@@ -54,8 +51,6 @@ coverage.xml
 
 # Django stuff:
 *.log
-<<<<<<< HEAD
-=======
 local_settings.py
 
 # Flask stuff:
@@ -64,7 +59,6 @@ instance/
 
 # Scrapy stuff:
 .scrapy
->>>>>>> ed1b8fdf9890c49e67cfc48cd4139a0350804f2e
 
 # Sphinx documentation
 docs/_build/
@@ -72,7 +66,6 @@ docs/_build/
 # PyBuilder
 target/
 
-<<<<<<< HEAD
 # DotEnv configuration
 .env
 
@@ -88,7 +81,6 @@ target/
 
 # exclude data from source control by default
 /data/
-=======
 # IPython Notebook
 .ipynb_checkpoints
 
@@ -110,4 +102,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
->>>>>>> ed1b8fdf9890c49e67cfc48cd4139a0350804f2e
+
+# OSX stuff
+.DS_Store
