@@ -15,6 +15,13 @@ def main(input_filepath, output_filepath):
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
 
+    data_dir = os.path.join(project_dir,"data")
+
+    with open(input_filepath,'r') as f:
+        for image_to_classification_line in f:
+            image_to_classification = {"image":image_to_classification_line[0],
+                    "classification":image_to_classification_line[1]}
+            print(image_to_classification)
 
 if __name__ == '__main__':
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
