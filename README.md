@@ -3,6 +3,22 @@ dicommunify
 
 DICommunify is built for dicom header images in which to translate them from imagery to the approriate DICOM encoding
 
+## Prerequisities
+
+* virtualenv
+* python 3.x installed on your computer
+* scipy and numpy
+* theano / tensorflow and keras
+* matplotlib (optional)
+
+### Installation
+
+* pip install -r requirements.txt
+
+## TODO
+
+* create dataset with samples and labels (x,y)
+* create dicommunify.dataset class with method xray FOR importing our dataset that we create
 Project Organization
 ------------
 
