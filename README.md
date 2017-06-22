@@ -14,11 +14,18 @@ DICommunify is built for dicom header images in which to translate them from ima
 ### Installation
 
 * pip install -r requirements.txt
+* download the [Image_Downscaled](https://www.dropbox.com/home/Analytics/R%C3%B6ntgenklassificering/data?preview=Image_Downscaled.zip) zipfile from Forefront data repo. Ask someone who has access.
+        * put the image folder inside [data/raw](data/raw) as in data/raw/Image_Downscaled
+* download the csv file which contain the image to label data at [ImageData.csv](https://www.dropbox.com/home/Analytics/R%C3%B6ntgenklassificering/data?preview=ImageData.csv)
+* Preprocess the data using datapreprocessing module
+* all models will be stored inside models folder
 
 ## TODO
 
 * create dataset with samples and labels (x,y)
+* train a model for classifying at least with > 80 % accuracy and more precision than recall
 * create dicommunify.dataset class with method xray FOR importing our dataset that we create
+
 Project Organization
 ------------
 
