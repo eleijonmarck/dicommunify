@@ -20,11 +20,16 @@ DICommunify is built for dicom header images in which to translate them from ima
 * Preprocess the data using datapreprocessing module
 * all models will be stored inside models folder
 
+#### isntallatio nof tensorflow and running any model
+
+* Follow the instructions for installation of the tensorflow environment from here [docker installation](https://docs.docker.com/engine/installation/#supported-platforms)
+ * run from the command line ```docker run -it -p 8888:8888 tensorflow/tensorflow```
+ * upload the image_classification notebook
+
 ## TODO
 
-* create dataset with samples and labels (x,y)
-* train a model for classifying at least with > 80 % accuracy and more precision than recall
-* create dicommunify.dataset class with method xray FOR importing our dataset that we create
+[x] create dataset with samples and labels (x,y)
+[x] train a model for classifying at least with > 80 % accuracy and more precision than recall
 
 Project Organization
 ------------
