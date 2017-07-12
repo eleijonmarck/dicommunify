@@ -23,6 +23,9 @@ DICommunify is built for dicom header images in which to translate them from ima
 
 #### data-preprocessing
 
+* open Jupyter Notebook by ```jupyter notebook```
+* go to ```notebooks/preprocessing.ipynb```
+* run through all of the cells and the output will be folders with each class
 * preprocess data with datapreprocessing notebook
 * makes it into
     * body
