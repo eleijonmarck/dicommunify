@@ -23,21 +23,33 @@ DICommunify is built for dicom header images in which to translate them from ima
 
 #### data-preprocessing
 
+    * this is to visualize the neural network inside of jupyter notebook
 * open Jupyter Notebook by ```jupyter notebook```
 * go to ```notebooks/preprocessing.ipynb```
 * run through all of the cells and the output will be folders with each class
-* preprocess data with datapreprocessing notebook
-* makes it into
-    * body
-    * head-neck
-    * ..
+* makes it into the folder structure
+``` yaml
+train:
+    Body: "images"
+    Head-Neck: "images"
+    ..: "images"
+test:
+    Body: "images"
+    Head-Neck: "images"
+    ..: "images"
+```
 
 #### installation of tensorflow and running any model
 
-* Follow the instructions for installation of the tensorflow environment from here [docker installation](https://docs.docker.com/engine/installation/#supported-platforms)
-* command line ```docker run -it -p 8888:8888 tensorflow/tensorflow```
-* upload the image_classification notebook
-* all models will be stored inside models folder
+* for mac install ```brew install gprof2dot```
+    * otherwise install from source [graphviz](http://www.graphviz.org/pub/graphviz/CURRENT/graphviz-working.tar.gz)
+* open the ```image_classification.ipynb``` notebook
+* before running the model, start tensorboard by running:
+    * cd to ```notebook``` directory and run 
+    * ```tensorboard --logdir summary --port=8008 &```
+    * this will give you tensorboard @ localhost:8008
+* for running completely new models with tensorboard, just delete the ```summary``` folder
+* all models will be stored inside models folder for further evaluation
 
 ## TODO
 
